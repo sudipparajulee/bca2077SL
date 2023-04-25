@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Jquery Example</title>
+        <script src="jquery-3.6.4.js"></script>
+    </head>
+    <body>
+        <p id="mytext">Hello</p>
+        <input type="text" id="num1">
+
+        <h1>Click to disappear hsdkj</h1>
+        <h1>Click to disappearasldfasfas</h1>
+        <h1>Click to disappear232323    </h1>
+        <h1>Click to 4454</h1>
+        <h1>Click to sdf</h1>
+
+
+        <h2>Show</h2>
+
+        <script>
+            $('#mytext').text('hello there');
+            $('#num1').val('1230');
+
+            var x = $('#mytext').text();
+            // alert(x);
+
+            $('document').ready(function(){
+                $('h1').click(function(){
+                    $(this).hide();
+                });
+
+                $('h2').dblclick(function(){
+                    $('h1').show();
+                })
+            });
+        </script>
+    </body>
+</html>
